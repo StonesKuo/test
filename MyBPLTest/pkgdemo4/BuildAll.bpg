@@ -1,0 +1,32 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = AppAddin.bpl PkgDemo.exe Package1.bpl Package2.bpl PkgDATA.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+PkgDemo.exe: PkgDemo.dpr
+  $(DCC)
+
+AppAddin.bpl: AppAddin.dpk
+  $(DCC)
+
+Package1.bpl: Package1.dpk
+  $(DCC)
+
+Package2.bpl: Package2.dpk
+  $(DCC)
+
+PkgDATA.bpl: PkgDATA.dpk
+  $(DCC)
+
+

@@ -1,0 +1,40 @@
+unit UFomBpl;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFormBpl = class(TForm)
+    Button1: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormBpl: TFormBpl;
+
+implementation
+
+{$R *.dfm}
+
+procedure CreateForm;
+begin
+  FormBpl := TFormBpl.Create(application);
+  FormBpl.Show;
+end;
+procedure DestroyForm;
+begin
+  if Assigned(FormBpl) then
+    FormBpl.Destroy;
+end;
+
+Initialization
+  CreateForm;
+Finalization
+  DestroyForm;
+end.

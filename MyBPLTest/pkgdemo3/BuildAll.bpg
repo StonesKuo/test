@@ -1,0 +1,32 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = Project1.exe AppAddin.bpl DmodIntf.bpl DModule2.bpl Query2.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+Project1.exe: Project1.dpr
+  $(DCC)
+
+AppAddin.bpl: AppAddin.dpk
+  $(DCC)
+
+DModule2.bpl: DModule2.dpk
+  $(DCC)
+
+Query2.bpl: Query2.dpk
+  $(DCC)
+
+DmodIntf.bpl: DmodIntf.dpk
+  $(DCC)
+
+

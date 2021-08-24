@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A35B9ED3-05CB-4F6A-BB3E-7D0BE832305F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AppAddin.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PkgDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Package1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Package2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PkgDATA.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AppAddin">
+        <MSBuild Projects="AppAddin.dproj"/>
+    </Target>
+    <Target Name="AppAddin:Clean">
+        <MSBuild Projects="AppAddin.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AppAddin:Make">
+        <MSBuild Projects="AppAddin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PkgDemo">
+        <MSBuild Projects="PkgDemo.dproj"/>
+    </Target>
+    <Target Name="PkgDemo:Clean">
+        <MSBuild Projects="PkgDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PkgDemo:Make">
+        <MSBuild Projects="PkgDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Package1">
+        <MSBuild Projects="Package1.dproj"/>
+    </Target>
+    <Target Name="Package1:Clean">
+        <MSBuild Projects="Package1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Package1:Make">
+        <MSBuild Projects="Package1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Package2">
+        <MSBuild Projects="Package2.dproj"/>
+    </Target>
+    <Target Name="Package2:Clean">
+        <MSBuild Projects="Package2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Package2:Make">
+        <MSBuild Projects="Package2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PkgDATA">
+        <MSBuild Projects="PkgDATA.dproj"/>
+    </Target>
+    <Target Name="PkgDATA:Clean">
+        <MSBuild Projects="PkgDATA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PkgDATA:Make">
+        <MSBuild Projects="PkgDATA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AppAddin;PkgDemo;Package1;Package2;PkgDATA"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AppAddin:Clean;PkgDemo:Clean;Package1:Clean;Package2:Clean;PkgDATA:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AppAddin:Make;PkgDemo:Make;Package1:Make;Package2:Make;PkgDATA:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

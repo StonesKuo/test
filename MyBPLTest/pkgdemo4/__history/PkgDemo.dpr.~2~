@@ -1,0 +1,14 @@
+program PkgDemo;
+
+uses
+  Forms,
+  Main in 'Main.pas' {MainForm},
+  PkgUtils in 'PkgUtils.pas';
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TMainForm, MainForm);
+  Application.Run;
+end.

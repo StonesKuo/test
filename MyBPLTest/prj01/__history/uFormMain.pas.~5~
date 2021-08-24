@@ -1,0 +1,41 @@
+unit uFormMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFormMain = class(TForm)
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+  private
+    fHndl: THandle;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormMain: TFormMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormMain.BitBtn1Click(Sender: TObject);
+begin
+  unloadpackage(fHndl);
+end;
+
+procedure TFormMain.BitBtn2Click(Sender: TObject);
+var
+begin
+  fHndl := LoadPackage('Package1.bpl');
+
+end;
+
+end.

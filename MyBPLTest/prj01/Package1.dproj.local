@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/08/17 15:13:25.000.936,=rtl.dcp</Transaction>
+    <Transaction>2021/08/17 15:14:34.000.780,C:\Users\Stone\Documents\MyBPLTest\prj01\Package1.dproj=C:\Users\Stone\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2021/08/17 15:15:04.000.417,=C:\Users\Stone\Documents\MyBPLTest\prj01\Unit1.pas</Transaction>
+    <Transaction>2021/08/17 15:16:00.000.323,=C:\Users\Stone\Documents\MyBPLTest\prj01\Unit2.pas</Transaction>
+    <Transaction>2021/08/17 15:16:27.000.890,C:\Users\Stone\Documents\MyBPLTest\prj01\UForm2.pas=C:\Users\Stone\Documents\MyBPLTest\prj01\Unit2.pas</Transaction>
+    <Transaction>2021/08/17 15:16:27.000.890,C:\Users\Stone\Documents\MyBPLTest\prj01\UForm2.dfm=C:\Users\Stone\Documents\MyBPLTest\prj01\Unit2.dfm</Transaction>
+    <Transaction>2021/08/17 15:21:04.000.590,C:\Users\Stone\Documents\MyBPLTest\prj01\Unit1.pas=</Transaction>
+    <Transaction>2021/08/17 15:21:30.000.558,C:\Users\Stone\Documents\MyBPLTest\prj01\UForm2.dfm=C:\Users\Stone\Documents\MyBPLTest\prj01\UFomBpl.dfm</Transaction>
+    <Transaction>2021/08/17 15:21:30.000.558,C:\Users\Stone\Documents\MyBPLTest\prj01\UForm2.pas=C:\Users\Stone\Documents\MyBPLTest\prj01\UFomBpl.pas</Transaction>
+    <Transaction>2021/08/17 15:28:24.000.091,=vcl.dcp</Transaction>
+    <Transaction>2021/08/17 19:11:54.000.288,=dbrtl.dcp</Transaction>
+    <Transaction>2021/08/17 19:11:54.000.307,=vclFireDAC.dcp</Transaction>
+    <Transaction>2021/08/17 19:11:54.000.341,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2021/08/17 19:11:54.000.324,=FireDAC.dcp</Transaction>
+    <Transaction>2021/08/17 19:11:54.000.359,=FireDACCommon.dcp</Transaction>
+    <Transaction>2021/08/17 19:11:54.000.376,=FireDACIBDriver.dcp</Transaction>
+    <Transaction>2021/08/17 19:13:21.000.682,=C:\Users\Stone\Documents\MyBPLTest\prj01\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
